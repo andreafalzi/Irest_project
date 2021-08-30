@@ -1,9 +1,23 @@
 .how {
   background-color: color(primary);
-  padding: 0 2em;
- &-text {
-   p {
-     font-weight: 700;
-   }
- }
+  &-text {
+    p {
+      font-weight: 700;
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+
+    img {
+      width: 60%;
+    }
+
+    img.how-icon-2 {
+      width: 30%;
+    }
+  }
 }

@@ -1,0 +1,113 @@
+.products {
+  background-image: url(../../img/products-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: color(primary);
+    mix-blend-mode: multiply;
+  }
+
+  &-text {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.card {
+  position: relative;
+  max-width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  transition: 0.5s;
+  margin-top: 3em;
+
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: color(primary);
+      clip-path: circle(120px at center);
+      transition: 0.5s;
+    }
+  }
+
+  .content {
+    position: relative;
+    width: 50%;
+    left: 0%;
+    padding: 20px 20px 20px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+
+    h2 {
+      color: color(white);
+      text-transform: uppercase;
+      font-size: 2rem;
+      line-height: 1em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: color(white);
+    }
+
+    a {
+      position: relative;
+      color: color(white);
+      padding: 10px 20px;
+      border-radius: 10px;
+      background: color(primary);
+      margin-top: 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    height: 100%;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  &:hover img {
+    right: 72%;
+  }
+
+  &:hover .content {
+    left: 50%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover .circle::before {
+    background: color(secondary);
+    clip-path: circle(400px at center);
+  }
+}
