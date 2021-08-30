@@ -1,0 +1,15 @@
+.section-title {
+  text-align: center;
+  font-size: 5rem;
+  color: transparent;
+  -webkit-text-stroke-color: color(tertiary);
+  -webkit-text-stroke-width: 2px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: .3em;
+}
+
+.section-paragraph {
+  font-size: 1.2rem;
+  color: color(white);
+}

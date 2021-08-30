@@ -1,0 +1,9 @@
+.how {
+  background-color: color(primary);
+  padding: 0 2em;
+ &-text {
+   p {
+     font-weight: 700;
+   }
+ }
+}

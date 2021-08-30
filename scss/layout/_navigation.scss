@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  padding: 3rem;
+  z-index: 300;
+  background-color: rgba(color(black), $alpha: .34);
+
+  &-burger {
+    margin-left: auto;
+  }
+}
