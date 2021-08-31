@@ -11,11 +11,14 @@ html {
   scroll-behavior: smooth;
 }
 
-section {
+section,
+footer {
   padding: 3em;
   display: -ms-grid;
   display: grid;
   place-content: center;
+  position: relative;
+  z-index: 10;
 }
 
 .section-title {
@@ -258,6 +261,19 @@ section {
   margin-left: auto;
 }
 
+.card-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2em;
+}
+
+@media (min-width: 760px) {
+  .card-grid {
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
 .how {
   background-color: #433C71;
 }
@@ -287,7 +303,7 @@ section {
   width: 30%;
 }
 
-.products {
+.bg-one {
   background-image: url(../../img/products-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -295,7 +311,7 @@ section {
   position: relative;
 }
 
-.products::before {
+.bg-one::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -303,21 +319,19 @@ section {
   mix-blend-mode: multiply;
 }
 
-.products-text {
+.bg-two {
+  background-image: url(../../img/social-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  z-index: 10;
 }
 
-.card-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 2em;
-}
-
-@media (min-width: 760px) {
-  .card-grid {
-    -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  }
+.bg-two::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #433C71;
+  mix-blend-mode: multiply;
 }
 /*# sourceMappingURL=main.css.map */
