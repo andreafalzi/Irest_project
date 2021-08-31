@@ -1,14 +1,14 @@
-@import "abstracts/maps";
-@import "abstracts/mixins";
+// Abstract files
+@import "abstracts/all";
 
-@import "core/reset";
-@import "core/typography";
+// Core files
+@import "core/all";
 
-@import "components/hamburgermenu";
-@import "components/arrow";
+// Components
+@import "components/all";
 
-@import "sections/how";
-@import "sections/products";
+// Layout
+@import "layout/all";
 
-@import "layout/navigation";
-@import "layout/header";
+// Sections
+@import "sections/all";
