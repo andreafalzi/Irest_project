@@ -157,7 +157,8 @@ footer {
 .hamburger-menu {
   width: 30px;
   height: 30px;
-  z-index: 999;
+  z-index: 40;
+  margin-left: auto;
 }
 
 .hamburger-menu .menu {
@@ -191,6 +192,37 @@ footer {
 
 .logo {
   width: calc(5rem + 5vw);
+}
+
+form {
+  margin-top: 3em;
+}
+
+form input {
+  width: 100%;
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+form button {
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: auto;
+  width: 100%;
+  background-color: #B9BE2F;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+form textarea {
+  width: 100%;
+  height: 300px;
+  padding: 1em;
+  font-size: 1.5rem;
+  resize: none;
 }
 
 .footer {
@@ -277,12 +309,76 @@ footer {
   position: fixed;
   width: 100%;
   padding: 2em 3em;
-  z-index: 300;
   background-color: rgba(0, 0, 0, 0.34);
+  z-index: 30;
 }
 
-.nav-navbar {
-  margin-left: auto;
+.nav-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #433C71;
+  -webkit-clip-path: circle(100px at 115% -15%);
+          clip-path: circle(100px at 115% -15%);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.nav-navigation .navbar-list {
+  list-style: none;
+}
+
+.nav-navigation .navbar-list-link {
+  text-decoration: none;
+  color: transparent;
+  font-size: 5rem;
+  -webkit-text-stroke-color: #B9BE2F;
+  -webkit-text-stroke-width: 2px;
+  -webkit-transition: color .5s linear;
+  transition: color .5s linear;
+}
+
+.nav-navigation .navbar-list-link:hover {
+  color: #B9BE2F;
+}
+
+.checkbox:checked ~ .nav-navigation {
+  -webkit-clip-path: circle(4000px at 115% -15%);
+          clip-path: circle(4000px at 115% -15%);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu {
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+  -webkit-transform: rotateZ(-40deg);
+          transform: rotateZ(-40deg);
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+  opacity: 0;
+}
+
+.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+  -webkit-transform: rotateZ(40deg);
+          transform: rotateZ(40deg);
 }
 
 .card-grid {
@@ -416,32 +512,6 @@ footer {
   }
 }
 
-.contact-form input {
-  width: 100%;
-  padding: 1em;
-  font-size: 1.5rem;
-}
-
-.contact-form button {
-  padding: 1em;
-  margin-top: 1em;
-  margin-left: auto;
-  width: 100%;
-  background-color: #B9BE2F;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-.contact-form textarea {
-  width: 100%;
-  height: 300px;
-  padding: 1em;
-  font-size: 1.5rem;
-  resize: none;
-}
-
 .how {
   background-color: #433C71;
 }
@@ -469,28 +539,6 @@ footer {
 
 .how-icon img.how-icon-2 {
   width: 30%;
-}
-
-.newsletter-form {
-  margin-top: 3em;
-}
-
-.newsletter-form input {
-  width: 100%;
-  padding: 1em;
-  font-size: 1.5rem;
-}
-
-.newsletter-form button {
-  padding: 1em;
-  margin-top: 1em;
-  margin-left: auto;
-  width: 100%;
-  background-color: #B9BE2F;
-  border: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.5rem;
 }
 
 .social-icon {
