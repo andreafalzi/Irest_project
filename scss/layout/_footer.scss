@@ -1,0 +1,31 @@
+.footer {
+ 
+  &-logo {
+    display: grid;
+    place-content: center;
+    
+  }
+  &-info {
+    color: color(white);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    font-size: 1.5rem;
+
+
+    &-left {
+
+    }
+
+    &-right {
+
+    }
+  }
+
+  &-bottom {
+    color: color(white);
+    margin-top: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
