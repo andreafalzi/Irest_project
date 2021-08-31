@@ -1,25 +1,13 @@
 .footer {
- 
-  &-logo {
-    display: grid;
-    place-content: center;
-    
-  }
+  text-align: center;
+
   &-info {
     color: color(white);
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
     font-size: 1.5rem;
-
-
-    &-left {
-
-    }
-
-    &-right {
-
-    }
+    text-align: start;
   }
 
   &-bottom {

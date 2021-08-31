@@ -193,10 +193,8 @@ footer {
   width: calc(5rem + 5vw);
 }
 
-.footer-logo {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+.footer {
+  text-align: center;
 }
 
 .footer-info {
@@ -208,6 +206,7 @@ footer {
       justify-content: space-around;
   margin-top: 2em;
   font-size: 1.5rem;
+  text-align: start;
 }
 
 .footer-bottom {
