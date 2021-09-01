@@ -455,6 +455,7 @@ form textarea {
   text-decoration: none;
   color: transparent;
   font-size: 5rem;
+  font-weight: 700;
   -webkit-text-stroke-color: #B9BE2F;
   -webkit-text-stroke-width: 2px;
   -webkit-transition: color .5s linear;
