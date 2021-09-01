@@ -4,6 +4,20 @@
     display: flex;
     justify-content: space-around;
 
+    @include response(md) {
+      margin-top: 5em;
+      max-width: 70%;
+      margin-inline: auto;
+    }
+
+    @include response(lg) {
+      margin-top: 5em;
+      max-width: 1000px;
+      margin-inline: auto;
+    }
+
+
+
     &-item {
       list-style: none;
     }

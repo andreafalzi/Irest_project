@@ -12,7 +12,16 @@ html {
 
 section,
 footer {
-  padding: 3em;
+  padding-block: 3em;
+  padding-inline: 3em;
   position: relative;
   z-index: 10;
+
+  @include response(md) {
+    padding-block: 5em;
+  }
+
+  @include response(lg) {
+    padding-block: 7em;
+  }
 }

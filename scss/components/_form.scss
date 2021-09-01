@@ -5,6 +5,12 @@ form {
     width: 100%;
     padding: 1em;
     font-size: 1.5rem;
+    border: none;
+    margin-bottom: .3em;
+
+    @include response (lg) {
+      font-size: 1.7rem;
+    }
   }
 
   button {
@@ -18,6 +24,10 @@ form {
     font-weight: 700;
     font-size: 1.5rem;
     cursor: pointer;
+
+    @include response (lg) {
+      font-size: 1.7rem;
+    }
   }
 
   textarea {
@@ -26,5 +36,10 @@ form {
     padding: 1em;
     font-size: 1.5rem;
     resize: none;
+    border: none;
+
+    @include response (lg) {
+      font-size: 1.7rem;
+    }
   }
 }

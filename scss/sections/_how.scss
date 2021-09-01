@@ -14,10 +14,18 @@
 
     img {
       width: 60%;
+
+      @include response(lg) {
+        width: 40%;
+      }
     }
 
     img.how-icon-2 {
       width: 30%;
+
+      @include response(lg) {
+        width: 15%;
+      }
     }
   }
 }

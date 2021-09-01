@@ -1,5 +1,23 @@
 .newsletter {
   &-form {
-    
+    @include response (lg) {
+      @include flexPosition;
+      margin-inline: auto;
+      width: 80%;
+    }
+
+    input {
+      @include response (lg) {
+        margin-bottom: 0;
+        width: 68%;
+      }
+    }
+
+    button {
+      @include response (lg) {
+        margin-top: 0;
+        width: 30%;
+      }
+    }
   }
 }

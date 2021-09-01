@@ -55,17 +55,19 @@
 
     <header>
       <div class="hero">
-        <div class="hero-left-img"></div>
-        <div class="hero-center-text">
-          <h1>Sleep</h1>
-          <h1>Charge</h1>
-          <h1>Repeat</h1>
-        </div>
-        <div class="hero-right-img"></div>
-        <div class="arrow">
-          <svg xmlns="http://www.w3.org/2000/svg" width="44.053" height="37.03" viewBox="0 0 44.053 37.03">
-            <path id="Icon_material-keyboard-arrow-down" data-name="Icon material-keyboard-arrow-down" d="M14.176,11.76l16.85,22.887L47.876,11.76l5.176,7.046L31.026,48.79,9,18.806Z" transform="translate(-9 -11.76)" />
-          </svg>
+        <div class="hero-grid container">
+          <div class="hero-grid-left-img"><img src="img/sleeping-bag-1.png" alt="black sleeping bag"></div>
+          <div class="hero-grid-center-text">
+            <h1>Sleep</h1>
+            <h1>Charge</h1>
+            <h1>Repeat</h1>
+          </div>
+          <div class="hero-grid-right-img"><img src="img/iphone-1.png" alt="iphone"></div>
+          <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="44.053" height="37.03" viewBox="0 0 44.053 37.03">
+              <path id="Icon_material-keyboard-arrow-down" data-name="Icon material-keyboard-arrow-down" d="M14.176,11.76l16.85,22.887L47.876,11.76l5.176,7.046L31.026,48.79,9,18.806Z" transform="translate(-9 -11.76)" />
+            </svg>
+          </div>
         </div>
       </div>
     </header>
@@ -79,7 +81,7 @@
         <h1 class="section-title">How does it works</h1>
         <p class="section-paragraph">Connect your smartphone to your sleeping bag and your body heat will charge it</p>
       </div>
-      <div class="how-icon">
+      <div class="how-icon container">
         <img class="how-icon-1" src="img/sleeping-bag.svg" alt="sleeping bag svg" />
         <img class="how-icon-2" src="img/charger.svg" alt="plug in" />
         <img class="how-icon-3" src="img/phone.svg" alt="mobile phone" />
@@ -95,7 +97,7 @@
           <h1 class="section-title">Our products</h1>
           <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellat amet similique rem odio perspiciatis. Dolore nam qui impedit laboriosam!</p>
         </div>
-        <div class="card-grid">
+        <div class="card-grid container">
           <div class="card">
             <div class="circle"></div>
             <div class="content">
@@ -160,10 +162,12 @@
           <h1 class="section-title">Newsletter</h1>
           <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellat amet similique rem odio perspiciatis. Dolore nam qui impedit laboriosam!</p>
         </div>
-        <form class="newsletter-form" name="newsForm" onsubmit="return validateNews()">
-          <input type="text" placeholder="Your Email" name="email" />
-          <button type="submit">JOIN THE CLUB</button>
-        </form>
+        <div class="container">
+          <form class="newsletter-form" name="newsForm" onsubmit="return validateNews()">
+            <input type="text" placeholder="Your Email" name="email" />
+            <button type="submit">JOIN THE CLUB</button>
+          </form>
+        </div>
       </section>
       <!-- SECTION NEWSLETTER END -->
 
@@ -174,7 +178,7 @@
           <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellat amet similique rem odio perspiciatis. Dolore nam qui impedit laboriosam!</p>
         </div>
 
-        <div class="slideshow">
+        <div class="slideshow container">
           <div class="slideshow-slide">
             <p class="slideshow-slide-text">@ Roskilde Festival</p>
             <img src="img/roskilde.jpg" alt="roskilde festival" />

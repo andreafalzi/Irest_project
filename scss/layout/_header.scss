@@ -1,8 +1,4 @@
 .hero {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 90vh 10vh;
-  place-content: center;
   position: relative;
   background-image: url(../../img/hero.jpg);
   background-position: center;
@@ -12,31 +8,62 @@
   width: 100%;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
-    background-color: #6A713C;
+    background-color: #6a713c;
     mix-blend-mode: hard-light;
   }
 
-  &-left-img {
-    display: none;
-  }
+  &-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 90vh 10vh;
 
-  &-center-text {
-    color: color(white);
-    font-size: 3rem;
-    font-weight: 700;
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
-    margin: auto;
-    z-index: 10;
-    text-shadow: 0 7px 5px color(black);
-    text-transform: uppercase;
-    text-align: center;
-  }
+    &-left-img {
+      display: none;
 
-  &-right-img {
-    display: none;
+      @include response(xl) {
+        display: grid;
+        place-content: center;
+        position: relative;
+      }
+
+      img {
+        max-height: 50vh;
+      }
+    }
+
+    &-center-text {
+      color: color(white);
+      font-size: 3rem;
+      font-weight: 700;
+      grid-column: 2 / 3;
+      grid-row: 1 / -1;
+      margin: auto;
+      z-index: 10;
+      text-shadow: 0 7px 5px color(black);
+      text-transform: uppercase;
+      text-align: center;
+
+      @include response(md) {
+        font-size: 5rem;
+      }
+    }
+
+    &-right-img {
+      display: none;
+
+      @include response(xl) {
+        display: grid;
+        place-content: center;
+        position: relative;
+      }
+
+      img {
+        max-height: 50vh;
+      }
+    }
   }
 }
