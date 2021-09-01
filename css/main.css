@@ -335,8 +335,8 @@ form textarea {
   background-color: #433C71;
   -webkit-clip-path: circle(100px at 115% -15%);
           clip-path: circle(100px at 115% -15%);
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .nav-navigation .navbar-list {

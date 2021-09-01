@@ -160,9 +160,9 @@
           <h1 class="section-title">Newsletter</h1>
           <p class="section-paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae repellat amet similique rem odio perspiciatis. Dolore nam qui impedit laboriosam!</p>
         </div>
-        <form class="newsletter-form">
-          <input type="text" placeholder="Your Email" />
-          <button type="button">JOIN THE CLUB</button>
+        <form class="newsletter-form" name="newsForm" onsubmit="return validateNews()">
+          <input type="text" placeholder="Your Email" name="email" />
+          <button type="submit">JOIN THE CLUB</button>
         </form>
       </section>
       <!-- SECTION NEWSLETTER END -->
@@ -237,11 +237,11 @@
           <h1 class="section-title">Contact Us</h1>
         </div>
 
-        <form class="contact-form">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email" />
-          <textarea name="text" placeholder="Input your message"></textarea>
+        <form class="contact-form" name="myForm" onsubmit="return validateForm()">
+          <input type="text" placeholder="First Name" name="fname" />
+          <input type="text" placeholder="Last Name" name="lname" />
+          <input type="email" placeholder="Email" name="email" />
+          <textarea type="text" placeholder="Input your message" name="textarea"></textarea>
           <button type="submit">SEND</button>
         </form>
       </section>
@@ -265,5 +265,7 @@
       </footer>
       <!-- FOOTER END -->
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
