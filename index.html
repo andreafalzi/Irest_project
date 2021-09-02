@@ -56,13 +56,13 @@
     <header>
       <div class="hero">
         <div class="hero-grid container">
-          <div class="hero-grid-left-img"><img src="img/sleeping-bag-1.png" alt="black sleeping bag"></div>
+          <div class="hero-grid-left-img"><img src="img/sleeping-bag-1.png" alt="black sleeping bag" /></div>
           <div class="hero-grid-center-text">
             <h1>Sleep</h1>
             <h1>Charge</h1>
             <h1>Repeat</h1>
           </div>
-          <div class="hero-grid-right-img"><img src="img/iphone-1.png" alt="iphone"></div>
+          <div class="hero-grid-right-img"><img src="img/iphone-1.png" alt="iphone" /></div>
           <div class="arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="44.053" height="37.03" viewBox="0 0 44.053 37.03">
               <path id="Icon_material-keyboard-arrow-down" data-name="Icon material-keyboard-arrow-down" d="M14.176,11.76l16.85,22.887L47.876,11.76l5.176,7.046L31.026,48.79,9,18.806Z" transform="translate(-9 -11.76)" />
@@ -99,6 +99,13 @@
         </div>
         <div class="card-grid container">
           <div class="card">
+            <input type="checkbox" id="checkProduct-1" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-1" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -108,6 +115,13 @@
             <img src="img/sleeping-bag-2.png" alt="" />
           </div>
           <div class="card">
+            <input type="checkbox" id="checkProduct-2" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-2" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -117,6 +131,13 @@
             <img src="img/sleeping-bag-3.png" alt="" />
           </div>
           <div class="card">
+            <input type="checkbox" id="checkProduct-3" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-3" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -126,6 +147,13 @@
             <img src="img/sleeping-bag-4.png" alt="" />
           </div>
           <div class="card">
+            <input type="checkbox" id="checkProduct-4" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-4" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -135,6 +163,13 @@
             <img src="img/sleeping-bag-5.png" alt="" />
           </div>
           <div class="card">
+            <input type="checkbox" id="checkProduct-5" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-5" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -144,6 +179,13 @@
             <img src="img/sleeping-bag-6.png" alt="" />
           </div>
           <div class="card">
+            <input type="checkbox" id="checkProduct-6" class="card-checkbox" hidden />
+            <div class="show-button">
+              <label for="checkProduct-6" >
+                <span class="open">OPEN</span>
+                <span class="close">X</span>
+              </label>
+            </div>
             <div class="circle"></div>
             <div class="content">
               <h2>Sleep Bag</h2>
@@ -241,7 +283,7 @@
           <h1 class="section-title">Contact Us</h1>
         </div>
 
-        <form class="contact-form" name="myForm" onsubmit="return validateForm()">
+        <form class="contact-form container" name="myForm" onsubmit="return validateForm()">
           <input type="text" placeholder="First Name" name="fname" />
           <input type="text" placeholder="Last Name" name="lname" />
           <input type="email" placeholder="Email" name="email" />

@@ -7,24 +7,30 @@
   }
 
   &-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexPosition;
     margin-top: 5em;
 
     img {
       width: 60%;
 
+      @include response(md) {
+        width: 15rem;
+      }
+
       @include response(lg) {
-        width: 40%;
+        width: 20rem;
       }
     }
 
     img.how-icon-2 {
       width: 30%;
 
+      @include response(md) {
+        width: 7rem;
+      }
+
       @include response(lg) {
-        width: 15%;
+        width: 10rem;
       }
     }
   }

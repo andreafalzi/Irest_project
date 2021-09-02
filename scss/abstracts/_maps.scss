@@ -9,3 +9,12 @@ $colors: (
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+$socialMediaColors: 1 #b31217, 2 #FCAF45, 3 #517fa4, 4 #55acee;
+
+@each $color in $socialMediaColors {
+  .social-icon-item:nth-child(#{nth($color, 1)}) .social-icon-link {
+    color: nth($color, 2);
+    border: 0.1rem solid nth($color, 2);
+  }
+}

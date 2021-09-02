@@ -1,8 +1,13 @@
 .newsletter {
   &-form {
+    @include response(md) {
+      margin-inline: auto;
+      width: 80%;
+    }
+
+
     @include response (lg) {
       @include flexPosition;
-      margin-inline: auto;
       width: 80%;
     }
 

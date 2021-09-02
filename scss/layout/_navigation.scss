@@ -42,22 +42,22 @@
   }
 }
 
-.checkbox:checked ~ .nav-navigation {
+#check:checked ~ .nav-navigation {
   clip-path: circle(300vh at 115% -15%);
 }
 
-.checkbox:checked ~ .hamburger-menu .menu {
+#check:checked ~ .hamburger-menu .menu {
   transform: rotateZ(-90deg);
 }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-1 {
+#check:checked ~ .hamburger-menu .menu-line-1 {
   transform: rotateZ(-40deg);
 }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-2 {
+#check:checked ~ .hamburger-menu .menu-line-2 {
   opacity: 0;
 }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-3 {
+#check:checked ~ .hamburger-menu .menu-line-3 {
   transform: rotateZ(40deg);
 }
