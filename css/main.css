@@ -626,7 +626,7 @@ form textarea {
 
 .hero {
   position: relative;
-  background-image: url(img/hero.jpg);
+  background-image: url(../img/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1083,7 +1083,7 @@ form textarea {
 }
 
 .bg-one {
-  background-image: url(../../img/products-bg.jpg);
+  background-image: url(../img/products-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1099,7 +1099,7 @@ form textarea {
 }
 
 .bg-two {
-  background-image: url(../../img/social-bg.jpg);
+  background-image: url(../img/social-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
