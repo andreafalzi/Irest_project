@@ -11,7 +11,7 @@
     margin-top: 5em;
 
     img {
-      width: 60%;
+      width: 15rem;
 
       @include response(md) {
         width: 15rem;
@@ -23,7 +23,7 @@
     }
 
     img.how-icon-2 {
-      width: 30%;
+      width: 7rem;
 
       @include response(md) {
         width: 7rem;

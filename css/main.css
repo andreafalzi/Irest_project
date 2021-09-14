@@ -966,7 +966,7 @@ form textarea {
 }
 
 .how-icon img {
-  width: 60%;
+  width: 15rem;
 }
 
 @media (min-width: 760px) {
@@ -982,7 +982,7 @@ form textarea {
 }
 
 .how-icon img.how-icon-2 {
-  width: 30%;
+  width: 7rem;
 }
 
 @media (min-width: 760px) {
