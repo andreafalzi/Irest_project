@@ -12,7 +12,7 @@
 
     img {
       width: 15rem;
-
+      
       @include response(md) {
         width: 15rem;
       }
